@@ -15,6 +15,13 @@ class Player(pygame.sprite.Sprite):
 		self.pos = pygame.math.Vector2(self.rect.center)
 		self.speed = 200
 
+	def import_assets(self):
+		self.animations = {'up': [], 'down': [], 'left': [], 'right': [],
+							'right_idle': [], 'left-idle': [], 'up_idle': [], 'down_idle': [],
+							'right_hoe': [], 'left-hoe': [], 'up_hoe': [], 'down_hoe': [],
+							'right_axe': [], 'left-axe': [], 'up_axe': [], 'down_axe': [],
+							'right_water': [], 'left-water': [], 'up_water': [], 'down_water': [],
+		}
 
 	def input(self):
 		# gets all the keys that are being pressed.
